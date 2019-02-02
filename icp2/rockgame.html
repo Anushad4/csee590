@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body background="/Users/anushamuppalla/Documents/GitHub/csee590/icp2/background.png">
 
 <input type="text" value = "Display result here" id="anusha">
+
 <script>
     var user = prompt("Do you choose rock, paper or scissors?");            //to read input from user
     var computer = Math.random();                           //function indicates to select dynamically by computer
@@ -22,26 +23,26 @@
         }
         if(choice1==="rock"){
             if(choice2==="scissors"){
-                return "rock wins the game";
+                return "user wins the game";
             }
             else{
-                return "paper wins the game";
+                return "computer wins the game";
             }
         }
         if(choice1==="paper"){
             if(choice2==="rock"){
-                return "paper wins the game";
+                return "user wins the game";
             }
             else{
-                return "scissors wins the game";
+                return "computer wins the game";
             }
         }
         if(choice1==="scissors"){
             if(choice2==="rock"){
-                return "rock wins the game";
+                return "computer wins the game";
             }
             else{
-                return "scissors wins the game";
+                return "user wins the game";
             }
         }
     };
