@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" value = "Display result here" id="anusha">
+<script>
+    var user = prompt("Do you choose rock, paper or scissors?");            //to read input from user
+    var computer = Math.random();                           //function indicates to select dynamically by computer
+    if (computer <0.34)
+    {
+        computer = "rock";
+    }else if(computer<=0.67){
+        computer = "paper";
+    }
+    else{
+        computer = "scissors";
+    }
+    var compare = function(choice1,choice2)         //function definition to compare the choices
+    {
+        if(choice1===choice2){
+            return "The result is a tie!";
+        }
+        if(choice1==="rock"){
+            if(choice2==="scissors"){
+                return "rock wins the game";
+            }
+            else{
+                return "paper wins the game";
+            }
+        }
+        if(choice1==="paper"){
+            if(choice2==="rock"){
+                return "paper wins the game";
+            }
+            else{
+                return "scissors wins the game";
+            }
+        }
+        if(choice1==="scissors"){
+            if(choice2==="rock"){
+                return "rock wins the game";
+            }
+            else{
+                return "scissors wins the game";
+            }
+        }
+    };
+    var result = (compare(user,computer));                      // compare function call
+    document.getElementById("anusha").value = result;        //to pass id and storing result in to that id
+
+</script>
+
+</body>
+</html>

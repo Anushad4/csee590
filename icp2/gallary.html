@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+TODO:
+1.Enter your name in h1 and designation in h3
+2.Replace all the placeholder images with suitable images of the same size reflecting you and your projects.Feel free to use the sample images provided
+3.Replace the content of headings App1,App2,App3,App4 with suitable headings of your projects & provide their links in the corresponding links
+4.Make all the elements in the page responsive & align its content as shown in the output sample with the aforementioned using bootstrap
+-->
+
+
+
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><!--custom tags-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  <!--these links from bootstrap CDN-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&amp;lang=en" /> <!--custom fonts-->
+
+</head>
+<body style="font-family: 'Lato'">
+<div class="container">
+    <div class="row">                                               <!-- bootstrap grid-->
+        <div class="col-md-12">                                     <!--each row spcifies 12 spans-->
+            <div class="col-md-8">                                  <!-- first grid of 8 size of md having 992 pixels-->
+                <img src="../SampleImages/bean.jpg" align="left" height="180" width="100">
+            </div>
+            <div class="col-md-4">                                      <!--remaining grid of 4 size of md having 992 pixels-->
+                <h1  align="right">ANUSHA MUPPALLA</h1>
+                <h3 align="right">STUDENT</h3>
+            </div>
+        </div>
+    </div>
+
+    <hr style="border-top: 4px solid black"> <!--horizontal row tag-->
+
+    <div class="row">
+        <div class="col-md-12"> <img src="../SampleImages/Image.png" height="350" width="720"></div>        <!--full row grid with one image-->
+    </div>
+
+    <div>
+        <h2 style="color: #BCBBBB">Featured Work </h2>
+    </div>
+
+    <div class="row" style="color:#222222">
+        <div class="col-md-12">     <!--row grid of size 12 is divided into 3 grids of 4 size each with sm of having 768px because my mac screen size fits -->
+            <div class="col-sm-4">
+                <img src="../SampleImages/app1.png" width="210" height="220">
+                <h3 align="center">Itunes</h3>
+                <p align="center"><a href="https://www.apple.com/itunes/">Itunes(AppStore)</a></p>
+            </div>
+            <div class="col-sm-4">
+                <img src="../SampleImages/app2.png" width="210" height="220">
+                <h3 align="center">Sunflower</h3>
+                <p align="center"><a href="https://en.wikipedia.org/wiki/Helianthus">Helianthus(Sunflower)</a></p>
+            </div>
+            <div class="col-sm-4">
+                <img src="../SampleImages/app3.png" width="210" height="220">
+                <h3 align="center">Icloud</h3>
+                <p align="center"><a href="https://www.icloud.com">Icloud(apple)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
