@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>PickMyFavoriteColor</title>
+    <link rel="stylesheet" href="style.css">
+<!--to use jquery and js -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<!--to take a container -->
+<div id="container">
+    <!-- heading-->
+    <h1 align="center">Color picker App</h1>
+    <!-- to give the input color name in hexadecimal or by name in input textbox-->
+    <input id="color" type="text"/>
+    <!--create button-->
+    <button  type="button" id="add-to-favorite">Add to favorites</button>
+    <!--container to display preview display and array of colors-->
+    <div class="row">
+        <!--to get preview in column-->
+        <div class="column">
+            <div class="preview">
+            </div>
+        </div>
+        <!--to get array of grids-->
+        <div class="column">
+            <div id="colors">
+                <!-- using bootstrap grid container-->
+                <div class="grid-container">
+                    <!-- to create  number of grids required-->
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                    <div class="grid-item"></div>
+                </div>
+
+            </div>
+        </div>
+        <!--to display color code under preview display-->
+        <div class="color-code"></div>
+    </div>
+</div>
+
+</body>
+</html>
