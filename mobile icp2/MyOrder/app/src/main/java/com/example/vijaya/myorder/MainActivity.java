@@ -129,20 +129,20 @@ public class MainActivity extends AppCompatActivity {
     private String createOrderSummary(String userInputName, boolean hasSpinach, boolean hasCheese, boolean hasBacon, boolean hasMeat, float price) {
         String orderSummaryMessage = "ORDER DETAILS"+ "\n\n" +getString(R.string.order_summary_name, userInputName) + "\n\n" +
                 getString(R.string.order_summary_spinach, boolToString(hasSpinach)) + "\n" +
-                getString(R.string.order_summary_bacon, boolToString(hasBacon)) + "\n" +
                 getString(R.string.order_summary_cheese, boolToString(hasCheese)) + "\n" +
+                getString(R.string.order_summary_bacon, boolToString(hasBacon)) + "\n" +
                 getString(R.string.order_summary_meat, boolToString(hasMeat)) + "\n\n\n" +
-                getString(R.string.order_summary_quantity, quantity) + "\n" +
+                getString(R.string.order_summary_quantity,quantity) + "\n" +
                 getString(R.string.order_summary_total_price, price) + "\n\n" +
                 getString(R.string.thank_you);
         return orderSummaryMessage;
     }
-
     /**
      * Method to calculate the total price
      *
      * @return total Price
      */
+
     private float calculatePrice(boolean hasSpinach, boolean hasMeat, boolean hasCheese, boolean hasBacon) {
         int basePrice = PIZZA_PRICE;
         if (hasSpinach) {
